@@ -3,25 +3,25 @@ import campusImg from "../../assets/bg.jpg";
 export default function Contact() {
   return (
     <section
-      className="relative bg-cover bg-center py-24"
+      className="relative bg-cover bg-center py-16 md:py-24"
       style={{ backgroundImage: `url(${campusImg})` }}
     >
-      <div className="max-w-7xl mx-auto px-20 flex justify-end">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex justify-center lg:justify-end">
 
         {/* Contact Card */}
-        <div className="bg-white backdrop-blur-sm p-10 rounded-xl shadow-lg max-w-md w-full">
+        <div className="bg-white/95 backdrop-blur-sm p-6 sm:p-8 md:p-10 rounded-xl shadow-lg max-w-md w-full">
 
-          <h2 className="text-2xl font-semibold text-orange-500 mb-6">
+          <h2 className="text-xl sm:text-2xl font-semibold text-orange-500 mb-5 sm:mb-6">
             Aditya University
           </h2>
 
-          <div className="space-y-4 text-black">
+          <div className="space-y-3 sm:space-y-4 text-black text-sm sm:text-base">
 
             <p>
               Email:{" "}
               <a
                 href="mailto:ic@adityauniversity.in"
-                className="text-blue-600 hover:underline"
+                className="text-blue-600 hover:underline break-words"
               >
                 ic@adityauniversity.in
               </a>
@@ -31,7 +31,7 @@ export default function Contact() {
               Dr. V. Srinivasa Rao,{" "}
               <a
                 href="mailto:hod_eee@adityauniversity.in"
-                className="text-black"
+                className="break-words"
               >
                 hod_eee@adityauniversity.in
               </a>
@@ -41,7 +41,7 @@ export default function Contact() {
               Dr. KVSR Murthy,{" "}
               <a
                 href="mailto:murthy.kvs@adityauniversity.in"
-                className="text-black"
+                className="break-words"
               >
                 murthy.kvs@adityauniversity.in
               </a>
@@ -49,10 +49,9 @@ export default function Contact() {
 
             <p>
               Dr. KK Pavan Kumar,{" "}
-              <br />
               <a
                 href="mailto:kpavankumark@adityauniversity.in"
-                className="text-black"
+                className="break-words"
               >
                 kpavankumark@adityauniversity.in
               </a>
@@ -62,7 +61,7 @@ export default function Contact() {
               Dr. Vijay Muniyandi,{" "}
               <a
                 href="mailto:vijaym@adityauniversity.in"
-                className="text-black "
+                className="break-words"
               >
                 vijaym@adityauniversity.in
               </a>
@@ -73,17 +72,19 @@ export default function Contact() {
               <a
                 href="https://adityauniversity.in/"
                 target="_blank"
-                className="text-orange-500 hover:underline"
+                className="text-orange-500 hover:underline break-words"
               >
-                adityauniversity.in/
+                adityauniversity.in
               </a>
             </p>
 
             <div>
-              <p className="font-semibold mt-6 mb-2">Address:</p>
-              <p className="text-gray-600">
-                Aditya Nagar, ADB Road, Surampalem, <br />
-                Pin: 533437 Kakinada District, <br />
+              <p className="font-semibold mt-5 mb-2">Address:</p>
+              <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
+                Aditya Nagar, ADB Road, Surampalem,
+                <br />
+                Pin: 533437 Kakinada District,
+                <br />
                 Andhra Pradesh, India
               </p>
             </div>
