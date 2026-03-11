@@ -2,7 +2,7 @@ import sesha from "../../assets/committe.png";
 
 export default function Committee() {
   return (
-    <section id="committee" className="bg-gray-50 py-20">
+    <section id="committee" className="bg-white py-20">
       <div className="max-w-6xl mx-auto px-6">
         {/* Chief Patrons */}
         <h2 className="text-3xl font-semibold text-orange-500 mb-10">

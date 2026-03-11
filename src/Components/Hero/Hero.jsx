@@ -1,7 +1,8 @@
 import bg from "../../assets/bg.jpg";
 import logo1 from "../../assets/agec_icon.png";
 import logo2 from "../../assets/aicteLogo.png";
-import logo3 from "../../assets/agec_icon.png";
+import logo3 from "../../assets/image.png";
+import logo4 from "../../assets/scopusLogo.webp";
 
 export default function Hero() {
   return (
@@ -40,11 +41,11 @@ export default function Hero() {
           </div>
 
           <div className="bg-white rounded-lg p-4">
-            <img src={logo2} className="h-16" />
+            <img src={logo3} className="h-16" />
           </div>
 
           <div className="bg-white rounded-lg p-4">
-            <img src={logo3} className="h-16" />
+            <img src={logo4} className="h-16" />
           </div>
 
           <div className="bg-white rounded-lg p-4">

@@ -67,7 +67,7 @@ const tracks = [
 
 export default function CallForPapers() {
   return (
-    <section className="py-18 bg-white">
+    <section className="py-20 bg-white">
       <div className="max-w-5xl mx-auto px-6">
 
         {/* Heading */}

@@ -2,16 +2,16 @@ import universityImg from "../../assets/aboutaditya.png";
 
 export default function AboutUniversity() {
   return (
-    <section className="bg-white py-6">
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
+    <section className="bg-white py-12 md:py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 
         {/* Left Content */}
-        <div className="text-justify pl-14">
-          <h2 className="text-3xl font-bold text-orange-500 mb-4">
+        <div className="text-justify md:pr-10">
+          <h2 className="text-center md:text-justify text-2xl md:text-3xl font-bold text-orange-500 mb-5 md:mb-6">
             About The University
           </h2>
 
-          <p className="text-gray-700 leading-normal mb-4">
+          <p className="text-gray-700 text-sm md:text-base leading-relaxed mb-4">
             <span className="font-bold">Aditya University</span> is a State
             Private University formed under the Andhra Pradesh Private
             Universities Act, 2016. It has evolved from the well-established
@@ -24,7 +24,7 @@ export default function AboutUniversity() {
             address both societal and industrial challenges.
           </p>
 
-          <p className="text-gray-700 leading-normal">
+          <p className="text-gray-700 text-sm md:text-base leading-relaxed">
             Experienced and learned teachers encourage intellectual curiosity,
             critical thinking, and cooperation among the diverse student
             community in an inclusive manner to realise their full potential
@@ -39,7 +39,7 @@ export default function AboutUniversity() {
           <img
             src={universityImg}
             alt="Aditya University"
-            className="rounded-lg shadow-lg w-full max-w-md"
+            className="rounded-lg shadow-lg w-full max-w-sm md:max-w-md"
           />
         </div>
 
