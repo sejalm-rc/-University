@@ -67,8 +67,8 @@ const tracks = [
 
 export default function CallForPapers() {
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="py-18 bg-white">
+      <div className="max-w-5xl mx-auto px-6">
 
         {/* Heading */}
         <div className="text-center mb-14">
@@ -100,7 +100,7 @@ export default function CallForPapers() {
                   <h3 className="text-xl font-semibold text-gray-800">
                     {track.title}
                   </h3>
-                  <p className="text-gray-500 text-sm mt-1">
+                  <p className="text-gray-500 text-[16px] mt-1">
                     {track.subtitle}
                   </p>
                 </div>
@@ -111,7 +111,7 @@ export default function CallForPapers() {
                 {track.topics.map((topic, i) => (
                   <li
                     key={i}
-                    className="flex items-start text-gray-600 text-sm"
+                    className="flex items-start text-gray-600 text-[16px]"
                   >
                     <span className="text-orange-500 mr-2">→</span>
                     {topic}
