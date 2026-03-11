@@ -262,49 +262,6 @@ export default function Committee() {
           </div>
         </div>
 
-        {/*  Publication Chair(s)*/}
-        <h2 className="text-3xl font-semibold text-orange-500 mt-10 mb-10">
-          Publication Chair(s)
-        </h2>
-
-        <div className="grid md:grid-cols-2 gap-12">
-          {/* Person */}
-          <div className="flex items-center gap-6">
-            <img
-              src={sesha}
-              alt="Dr. P. Subba Rao"
-              className="w-16 h-16 rounded-full object-cover shadow"
-            />
-
-            <div className="flex-1">
-              <h3 className="font-semibold text-gray-800">Dr. P. Subba Rao</h3>
-
-              <div className="h-[1px] bg-gray-200 my-2"></div>
-
-              <p className="text-gray-500 text-sm">Assoc. Professor, CSE</p>
-            </div>
-          </div>
-
-          {/* Person */}
-          <div className="flex items-center gap-6">
-            <img
-              src={sesha}
-              alt="Dr. K K Pavan Kumar"
-              className="w-16 h-16 rounded-full object-cover shadow"
-            />
-
-            <div className="flex-1">
-              <h3 className="font-semibold text-gray-800">
-                Dr. K K Pavan Kumar
-              </h3>
-
-              <div className="h-[1px] bg-gray-200 my-2"></div>
-
-              <p className="text-gray-500 text-sm">Dy. HOD-EEE</p>
-            </div>
-          </div>
-        </div>
-
         {/* Finance Chair*/}
         <h2 className="text-3xl font-semibold text-orange-500 mt-10 mb-10">
           Finance Chair
@@ -351,6 +308,150 @@ export default function Committee() {
               <div className="h-[1px] bg-gray-200 my-2"></div>
 
               <p className="text-gray-500 text-sm">Professor, EEEE</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Technical Program Committee*/}
+
+        <h2 className="text-3xl font-semibold text-orange-500 mt-10 mb-10">
+          Technical Program Comittee
+        </h2>
+
+        <div className="grid md:grid-cols-2 gap-12">
+          {/* Person */}
+          <div className="flex items-center gap-6">
+            <img
+              src={sesha}
+              alt="Dr. J. Pavan"
+              className="w-16 h-16 rounded-full object-cover shadow"
+            />
+
+            <div className="flex-1">
+              <h3 className="font-semibold text-gray-800">Dr. J. Pavan</h3>
+
+              <div className="h-[1px] bg-gray-200 my-2"></div>
+
+              <p className="text-gray-500 text-sm">
+                Controller of Examinations
+              </p>
+            </div>
+          </div>
+
+          {/* Person */}
+          <div className="flex items-center gap-6">
+            <img
+              src={sesha}
+              alt="Dr. K. Bapayya Naidu"
+              className="w-16 h-16 rounded-full object-cover shadow"
+            />
+
+            <div className="flex-1">
+              <h3 className="font-semibold text-gray-800">Dr. K. Bapayya Naidu</h3>
+
+              <div className="h-[1px] bg-gray-200 my-2"></div>
+
+              <p className="text-gray-500 text-sm">
+                Asst. Professor, EEE
+              </p>
+            </div>
+          </div>
+
+          {/* Person */}
+          <div className="flex items-center gap-6">
+            <img
+              src={sesha}
+              alt="Dr. T. Ravi"
+              className="w-16 h-16 rounded-full object-cover shadow"
+            />
+
+            <div className="flex-1">
+              <h3 className="font-semibold text-gray-800">Dr. T. Ravi</h3>
+
+              <div className="h-[1px] bg-gray-200 my-2"></div>
+
+              <p className="text-gray-500 text-sm">Pro-Vice Chancellor (S&P)</p>
+            </div>
+          </div>
+
+          {/* Person */}
+          <div className="flex items-center gap-6">
+            <img
+              src={sesha}
+              alt="Dr. G. Suresh"
+              className="w-16 h-16 rounded-full object-cover shadow"
+            />
+
+            <div className="flex-1">
+              <h3 className="font-semibold text-gray-800">Dr. G. Suresh</h3>
+
+              <div className="h-[1px] bg-gray-200 my-2"></div>
+
+              <p className="text-gray-500 text-sm">Registras</p>
+            </div>
+          </div>
+        </div>
+
+         
+        {/* Coordinator(s)*/}
+
+        <h2 className="text-3xl font-semibold text-orange-500 mt-10 mb-10">
+          Coordinator(s)
+        </h2>
+
+        <div className="grid md:grid-cols-2 gap-12">
+          {/* Person */}
+          <div className="flex items-center gap-6">
+            <img
+              src={sesha}
+              alt="Dr. J. Pavan"
+              className="w-16 h-16 rounded-full object-cover shadow"
+            />
+
+            <div className="flex-1">
+              <h3 className="font-semibold text-gray-800">Dr. J. Pavan</h3>
+
+              <div className="h-[1px] bg-gray-200 my-2"></div>
+
+              <p className="text-gray-500 text-sm">
+                Controller of Examinations
+              </p>
+            </div>
+          </div>
+
+          {/* Person */}
+          <div className="flex items-center gap-6">
+            <img
+              src={sesha}
+              alt="Dr. K. Bapayya Naidu"
+              className="w-16 h-16 rounded-full object-cover shadow"
+            />
+
+            <div className="flex-1">
+              <h3 className="font-semibold text-gray-800">Dr. K. Bapayya Naidu</h3>
+
+              <div className="h-[1px] bg-gray-200 my-2"></div>
+
+              <p className="text-gray-500 text-sm">
+                Asst. Professor, EEE
+              </p>
+            </div>
+          </div>
+
+          {/* Person */}
+          <div className="flex items-center gap-6">
+            <img
+              src={sesha}
+              alt="Dr. T. Ravi"
+              className="w-16 h-16 rounded-full object-cover shadow"
+            />
+
+            <div className="flex-1">
+              <h3 className="font-semibold text-gray-800">Dr. T. Ravi</h3>
+
+              <div className="h-[1px] bg-gray-200 my-2"></div>
+
+              <p className="text-gray-500 text-sm">Pro-Vice Chancellor (S&P)</p>
             </div>
           </div>
         </div>
