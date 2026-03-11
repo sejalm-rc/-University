@@ -19,3 +19,11 @@ html {
     background-size: 140%;
   }
 }
+
+/* Disable animation for mobile */
+@media (max-width: 768px) {
+  .hero-bg {
+    animation: none;
+    background-size: cover;
+  }
+}
