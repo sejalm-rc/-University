@@ -5,14 +5,13 @@ import logo3 from "../../assets/agec_icon.png";
 
 export default function Hero() {
   return (
-    <section
-      className="relative min-h-[120vh] flex items-center justify-center text-white"
-      style={{
-        backgroundImage: `url(${bg})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center"
-      }}
-    >
+<section
+  className="hero-bg relative min-h-[120vh] flex items-center justify-center text-white"
+  style={{
+    backgroundImage: `url(${bg})`,
+  }}
+>
+    
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/50"></div>
 

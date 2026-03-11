@@ -4,3 +4,18 @@
 html {
   scroll-behavior: smooth;
 }
+.hero-bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 120%;
+  animation: heroZoom 12s ease-in-out infinite alternate;
+}
+
+@keyframes heroZoom {
+  0% {
+    background-size: 120%;
+  }
+  100% {
+    background-size: 140%;
+  }
+}
