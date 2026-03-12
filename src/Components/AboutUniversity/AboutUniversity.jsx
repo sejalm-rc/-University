@@ -4,10 +4,10 @@ export default function AboutUniversity() {
   return (
     <section className="bg-white py-12 md:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-
+        
         {/* Left Content */}
-        <div className="text-justify md:pr-10">
-          <h2 className="text-center md:text-justify text-2xl md:text-3xl font-bold text-orange-500 mb-5 md:mb-6">
+        <div className="text-justify">
+          <h2 className="text-center md:text-left text-2xl md:text-3xl font-bold text-orange-500 mb-6">
             About The University
           </h2>
 
@@ -15,31 +15,24 @@ export default function AboutUniversity() {
             <span className="font-bold">Aditya University</span> is a State
             Private University formed under the Andhra Pradesh Private
             Universities Act, 2016. It has evolved from the well-established
-            <span className="font-bold">
-              {" "}Aditya Engineering College in Surampalem
-            </span>, Kakinada District, Andhra Pradesh.
-            Aditya University is committed to provide quality higher education
-            with global standards. Programs are well crafted to blend academic
-            rigor with practical relevance, equipping students to effectively
-            address both societal and industrial challenges.
+            <span className="font-bold"> Aditya Engineering College in Surampalem</span>,
+            Kakinada District, Andhra Pradesh. Aditya University is committed
+            to provide quality higher education with global standards.
           </p>
 
           <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-            Experienced and learned teachers encourage intellectual curiosity,
-            critical thinking, and cooperation among the diverse student
-            community in an inclusive manner to realise their full potential
-            and contribute to society. The memorandum of understanding with
-            foreign universities usher a new era of international academic
-            excellence.
+            Experienced teachers encourage intellectual curiosity, critical
+            thinking, and cooperation among the diverse student community to
+            realise their full potential and contribute to society.
           </p>
         </div>
 
         {/* Right Image */}
-        <div className="flex justify-center">
+        <div className="flex justify-center md:pl-10">
           <img
             src={universityImg}
             alt="Aditya University"
-            className="rounded-lg shadow-lg w-full max-w-sm md:max-w-md"
+            className="rounded-lg w-full max-w-md"
           />
         </div>
 

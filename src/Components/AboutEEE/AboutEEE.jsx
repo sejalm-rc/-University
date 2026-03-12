@@ -3,14 +3,12 @@ import eeeImg from "../../assets/department.png";
 export default function AboutEEE() {
   return (
     <section className="bg-white py-12 md:py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center">
-
-        {/* Image */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <div className="flex justify-center">
           <img
             src={eeeImg}
             alt="Electrical and Electronics Engineering"
-            className="rounded-lg shadow-md w-full max-w-sm md:max-w-lg"
+            className="w-full max-w-md rounded-lg"
           />
         </div>
 
@@ -25,16 +23,16 @@ export default function AboutEEE() {
             University is committed to developing highly competent engineers
             equipped for the modern world. By integrating
             <span className="font-bold">
-              {" "}advanced professional knowledge with entrepreneurial thinking
-              and critical problem-solving
-            </span>, we provide a rigorous education grounded in research and
-            strong industrial partnerships. Our distinguished faculty bring a
-            wealth of academic and industry experience, contributing to global
-            innovation through frequent publications in prestigious
-            international journals.
+              {" "}
+              advanced professional knowledge with entrepreneurial thinking and
+              critical problem-solving
+            </span>
+            , we provide a rigorous education grounded in research and strong
+            industrial partnerships. Our distinguished faculty bring a wealth of
+            academic and industry experience, contributing to global innovation
+            through frequent publications in prestigious international journals.
           </p>
         </div>
-
       </div>
     </section>
   );
