@@ -28,7 +28,7 @@ export default function AboutUniversity() {
         </div>
 
         {/* Right Image */}
-        <div className="flex justify-center md:pl-10">
+        <div className="flex justify-center md:pl-10 hover:scale-105 transition duration-300">
           <img
             src={universityImg}
             alt="Aditya University"

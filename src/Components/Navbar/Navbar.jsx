@@ -4,23 +4,33 @@ import { HashLink } from "react-router-hash-link";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const menuItems = [
+    { name: "HOME", link: "/#home" },
+    { name: "CALL FOR PAPERS", link: "/#callForPapers" },
+    { name: "SUBMISSIONS", link: "/#submission" },
+    { name: "REGISTRATION", link: "/#registrationFee" },
+    { name: "DATES", link: "/#registrationDates" },
+    { name: "COMMITTEE", link: "/#committee" },
+    { name: "CONTACT US", link: "/#contact" },
+  ];
+
   return (
-    <nav className="fixed top-0 w-full bg-white shadow z-50">
+    <nav className="fixed top-0 w-full bg-white backdrop-blur-md shadow z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
 
         {/* Logo */}
-        <HashLink smooth to="/#home" className="cursor-pointer">
+        <HashLink smooth to="/#home">
           <img
             src="https://adityauniversity.in/agec2026/images/au.f652eed91d8ba58a4968.webp"
             alt="Aditya University"
-            className="h-14"
+            className="h-12 md:h-14 object-contain"
           />
         </HashLink>
 
         {/* Hamburger Button */}
         <button
           className="md:hidden text-gray-700"
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={() => setIsOpen(prev => !prev)}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -48,29 +58,62 @@ export default function Navbar() {
         </button>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-8 font-semibold text-gray-700 text-sm tracking-wide">
-          <li><HashLink smooth to="/#home" className="hover:text-orange-500">HOME</HashLink></li>
-          <li><HashLink smooth to="/#callForPapers" className="hover:text-orange-500">CALL FOR PAPERS</HashLink></li>
-          <li><HashLink smooth to="/#submission" className="hover:text-orange-500 scroll-mt-24">SUBMISSIONS</HashLink></li>
-          <li><HashLink smooth to="/#registrationFee" className="hover:text-orange-500">REGISTRATION</HashLink></li>
-          <li><HashLink smooth to="/#registrationDates" className="hover:text-orange-500">DATES</HashLink></li>
-          <li><HashLink smooth to="/#committee" className="hover:text-orange-500">COMMITTEE</HashLink></li>
-          <li><HashLink smooth to="/#contact" className="hover:text-orange-500">CONTACT US</HashLink></li>
+        <ul className="hidden md:flex items-center gap-8 font-semibold text-gray-700 text-sm tracking-wide">
+          {menuItems.map((item) => (
+            <li key={item.name}>
+              <HashLink
+                smooth
+                to={item.link}
+                className="hover:text-orange-500 transition-colors duration-300"
+              >
+                {item.name}
+              </HashLink>
+            </li>
+          ))}
+
+          {/* Register Button */}
+          {/* <li>
+            <HashLink
+              smooth
+              to="/#registrationFee"
+              className="bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition"
+            >
+              Register
+            </HashLink>
+          </li> */}
         </ul>
       </div>
 
-      {/* Mobile / Tablet Menu */}
+      {/* Mobile Menu */}
       {isOpen && (
-        <ul className="md:hidden flex flex-col gap-4 px-6 pb-6 font-semibold text-gray-700 text-sm tracking-wide bg-white shadow">
-          <li><HashLink smooth to="/#home" onClick={()=>setIsOpen(false)} className="hover:text-orange-500">HOME</HashLink></li>
-          <li><HashLink smooth to="/#callForPapers" onClick={()=>setIsOpen(false)} className="hover:text-orange-500">CALL FOR PAPERS</HashLink></li>
-          <li><HashLink smooth to="/#submission" onClick={()=>setIsOpen(false)} className="hover:text-orange-500">SUBMISSIONS</HashLink></li>
-          <li><HashLink smooth to="/#registrationFee" onClick={()=>setIsOpen(false)} className="hover:text-orange-500">REGISTRATION</HashLink></li>
-          <li><HashLink smooth to="/#registrationDates" onClick={()=>setIsOpen(false)} className="hover:text-orange-500">DATES</HashLink></li>
-          <li><HashLink smooth to="/#committee" onClick={()=>setIsOpen(false)} className="hover:text-orange-500">COMMITTEE</HashLink></li>
-          <li><HashLink smooth to="/#contact" onClick={()=>setIsOpen(false)} className="hover:text-orange-500">CONTACT US</HashLink></li>
+        <ul className="md:hidden flex flex-col gap-4 px-6 pb-6 font-semibold text-gray-700 text-sm tracking-wide bg-white shadow transition-all duration-300">
+          {menuItems.map((item) => (
+            <li key={item.name}>
+              <HashLink
+                smooth
+                to={item.link}
+                onClick={() => setIsOpen(false)}
+                className="hover:text-orange-500 transition-colors duration-300"
+              >
+                {item.name}
+              </HashLink>
+            </li>
+          ))}
+
+          {/* Register Button */}
+          {/* <li>
+            <HashLink
+              smooth
+              to="/#registrationFee"
+              onClick={() => setIsOpen(false)}
+              className="bg-orange-500 text-white px-4 py-2 rounded-lg text-center hover:bg-orange-600 transition"
+            >
+              Register
+            </HashLink>
+          </li> */}
         </ul>
       )}
     </nav>
   );
 }
+

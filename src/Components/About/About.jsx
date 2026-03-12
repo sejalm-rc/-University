@@ -4,7 +4,7 @@ export default function About() {
   return (
     <section className="bg-white py-12 md:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-        <div className="flex justify-center">
+        <div className="flex justify-center hover:scale-105 transition duration-300">
           <img
             src={conferenceImg}
             alt="International Conference"

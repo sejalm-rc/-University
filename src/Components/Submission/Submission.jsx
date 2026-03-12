@@ -6,7 +6,7 @@ export default function Submission() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         {/* QR Code */}
         <div className="flex justify-center">
-          <div className="bg-white border-2 border-orange-500 p-6 md:p-8 rounded-xl text-center">
+          <div className="bg-white border-2 border-orange-500 p-6 md:p-8 rounded-xl text-center hover:scale-105 transition duration-300">
             <img
               src={qrCode}
               alt="Paper Submission QR Code"
