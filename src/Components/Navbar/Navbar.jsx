@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { HashLink } from "react-router-hash-link";
+import logo from "../../assets/logo.webp"
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +22,7 @@ export default function Navbar() {
         {/* Logo */}
         <HashLink smooth to="/#home">
           <img
-            src="https://adityauniversity.in/agec2026/images/au.f652eed91d8ba58a4968.webp"
+            src={logo}
             alt="Aditya University"
             className="h-12 md:h-14 object-contain"
           />
