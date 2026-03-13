@@ -131,10 +131,11 @@ className="border border-orange-200 rounded-xl p-8 bg-white hover:shadow-lg tran
 {/* Button */}
 
 <Link
-to={`/conference/${conf.slug}`}
-className="mt-6 inline-block text-orange-500 font-medium hover:underline"
+  to={`/conference/${conf.slug}`}
+  className="mt-6 inline-block text-orange-500 font-medium hover:underline"
+  onClick={() => window.scrollTo(0, 0)}
 >
-View Details →
+  View Details →
 </Link>
 
 </div>
