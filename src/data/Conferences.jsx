@@ -132,6 +132,10 @@ month: "July 2026",
 title:
 "Global Conference on Advances in Biotechnology, Pharmacology, and Translational Health Sciences",
 
+aboutSiare: `The Society of Academic Integrated Research and Education (SIARE) is an international academic organization dedicated to advancing interdisciplinary research, academic collaboration, and global knowledge exchange. The society provides a platform where scholars, researchers, policymakers, and industry leaders collaborate to address complex global challenges through innovative research and technological advancement.
+
+SIARE promotes research that integrates multiple disciplines such as engineering, sciences, social sciences, humanities, medicine, and sustainability studies. Through international conferences, workshops, training programs, and scholarly publications, the society fosters intellectual collaboration and supports the dissemination of impactful research.`,
+
 aboutConference:
 "This conference focuses on emerging research in biotechnology, pharmacology, and translational health sciences. The conference aims to bring together scientists, researchers, clinicians, and industry professionals to discuss cutting-edge developments in biomedical technologies and healthcare innovation.",
 
@@ -166,6 +170,39 @@ topics: [
 
 ],
 
+submissionGuidelines: {
+pages: "6–10 pages",
+format: "Microsoft Word or LaTeX",
+font: "Times New Roman",
+fontSize: "12",
+spacing: "1.5",
+citation: "APA / IEEE"
+},
+
+registration: [
+
+{
+category: "Student Author",
+fee: "$140"
+},
+
+{
+category: "Academic Author",
+fee: "$190"
+},
+
+{
+category: "Industry Participant",
+fee: "$230"
+},
+
+{
+category: "Listener",
+fee: "$80"
+}
+
+],
+
 importantDates: [
 
 {
@@ -184,6 +221,11 @@ date: "10 June 2026"
 },
 
 {
+activity: "Camera Ready Paper",
+date: "25 June 2026"
+},
+
+{
 activity: "Conference Dates",
 date: "10–11 July 2026"
 }
@@ -198,6 +240,10 @@ month: "August 2026",
 
 title:
 "International Conference on Emerging Technologies, Artificial Intelligence, and Smart Engineering Systems",
+
+aboutSiare: `The Society of Academic Integrated Research and Education (SIARE) is an international academic organization dedicated to advancing interdisciplinary research, academic collaboration, and global knowledge exchange. The society provides a platform where scholars, researchers, policymakers, and industry leaders collaborate to address complex global challenges through innovative research and technological advancement.
+
+SIARE promotes research that integrates multiple disciplines such as engineering, sciences, social sciences, humanities, medicine, and sustainability studies. Through international conferences, workshops, training programs, and scholarly publications, the society fosters intellectual collaboration and supports the dissemination of impactful research.`,
 
 aboutConference:
 "This conference explores emerging technologies shaping the future of engineering and intelligent systems. The event will bring together researchers, engineers, and technology innovators to discuss advancements in AI, robotics, automation, and digital infrastructure.",
@@ -233,11 +279,66 @@ topics: [
 
 ],
 
+submissionGuidelines: {
+pages: "6–10 pages",
+format: "Microsoft Word or LaTeX",
+font: "Times New Roman",
+fontSize: "12",
+spacing: "1.5",
+citation: "APA / IEEE"
+},
+
+registration: [
+
+{
+category: "Student Author",
+fee: "$150"
+},
+
+{
+category: "Academic Author",
+fee: "$200"
+},
+
+{
+category: "Industry Participant",
+fee: "$250"
+},
+
+{
+category: "Listener",
+fee: "$80"
+}
+
+],
+
 importantDates: [
-{ activity: "Abstract Submission", date: "10 June 2026" },
-{ activity: "Full Paper Submission", date: "25 June 2026" },
-{ activity: "Acceptance Notification", date: "10 July 2026" },
-{ activity: "Conference Dates", date: "12–13 August 2026" }
+
+{
+activity: "Abstract Submission",
+date: "10 June 2026"
+},
+
+{
+activity: "Full Paper Submission",
+date: "25 June 2026"
+},
+
+{
+activity: "Acceptance Notification",
+date: "10 July 2026"
+},
+
+{
+activity: "Camera Ready Paper",
+date: "25 July 2026"
+},
+
+{
+activity: "Conference Dates",
+date: "12–13 August 2026"
+}
+
 ]
 
 },
@@ -248,6 +349,10 @@ month: "September 2026",
 
 title:
 "World Conference on Social Transformation, Public Policy, and Global Development Studies",
+
+aboutSiare: `The Society of Academic Integrated Research and Education (SIARE) is an international academic organization dedicated to advancing interdisciplinary research, academic collaboration, and global knowledge exchange. The society provides a platform where scholars, researchers, policymakers, and industry leaders collaborate to address complex global challenges through innovative research and technological advancement.
+
+SIARE promotes research that integrates multiple disciplines such as engineering, sciences, social sciences, humanities, medicine, and sustainability studies. Through international conferences, workshops, training programs, and scholarly publications, the society fosters intellectual collaboration and supports the dissemination of impactful research.`,
 
 aboutConference:
 "This conference focuses on global social transformation, governance, and policy innovation. It aims to bring scholars, policymakers, and social scientists together to address social inequality, governance challenges, and sustainable development.",
@@ -282,6 +387,39 @@ topics: [
 
 ],
 
+submissionGuidelines: {
+pages: "6–10 pages",
+format: "Microsoft Word or LaTeX",
+font: "Times New Roman",
+fontSize: "12",
+spacing: "1.5",
+citation: "APA / IEEE"
+},
+
+registration: [
+
+{
+category: "Student Author",
+fee: "$150"
+},
+
+{
+category: "Academic Author",
+fee: "$200"
+},
+
+{
+category: "Industry Participant",
+fee: "$250"
+},
+
+{
+category: "Listener",
+fee: "$80"
+}
+
+],
+
 importantDates: [
 { activity: "Abstract Submission", date: "15 July 2026" },
 { activity: "Full Paper Submission", date: "1 August 2026" },
@@ -297,6 +435,10 @@ month: "October 2026",
 
 title:
 "International Conference on Agriculture, Food Security, and Sustainable Environmental Systems",
+
+aboutSiare: `The Society of Academic Integrated Research and Education (SIARE) is an international academic organization dedicated to advancing interdisciplinary research, academic collaboration, and global knowledge exchange. The society provides a platform where scholars, researchers, policymakers, and industry leaders collaborate to address complex global challenges through innovative research and technological advancement.
+
+SIARE promotes research that integrates multiple disciplines such as engineering, sciences, social sciences, humanities, medicine, and sustainability studies. Through international conferences, workshops, training programs, and scholarly publications, the society fosters intellectual collaboration and supports the dissemination of impactful research.`,
 
 aboutConference:
 "This conference focuses on sustainable agriculture, food security, and environmental systems. Researchers and professionals will discuss innovative agricultural technologies, climate-resilient farming, and sustainable food systems.",
@@ -331,6 +473,39 @@ topics: [
 
 ],
 
+submissionGuidelines: {
+pages: "6–10 pages",
+format: "Microsoft Word or LaTeX",
+font: "Times New Roman",
+fontSize: "12",
+spacing: "1.5",
+citation: "APA / IEEE"
+},
+
+registration: [
+
+{
+category: "Student Author",
+fee: "$150"
+},
+
+{
+category: "Academic Author",
+fee: "$200"
+},
+
+{
+category: "Industry Participant",
+fee: "$250"
+},
+
+{
+category: "Listener",
+fee: "$80"
+}
+
+],
+
 importantDates: [
 { activity: "Abstract Submission", date: "15 August 2026" },
 { activity: "Full Paper Submission", date: "1 September 2026" },
@@ -346,6 +521,10 @@ month: "November 2026",
 
 title:
 "International Conference on Digital Humanities, Media Culture, and Creative Arts Research",
+
+aboutSiare: `The Society of Academic Integrated Research and Education (SIARE) is an international academic organization dedicated to advancing interdisciplinary research, academic collaboration, and global knowledge exchange. The society provides a platform where scholars, researchers, policymakers, and industry leaders collaborate to address complex global challenges through innovative research and technological advancement.
+
+SIARE promotes research that integrates multiple disciplines such as engineering, sciences, social sciences, humanities, medicine, and sustainability studies. Through international conferences, workshops, training programs, and scholarly publications, the society fosters intellectual collaboration and supports the dissemination of impactful research.`,
 
 aboutConference:
 "This conference explores the intersection of humanities, digital technologies, and creative arts. The event highlights research in digital culture, media innovation, and creative technology.",
@@ -380,6 +559,39 @@ topics: [
 
 ],
 
+submissionGuidelines: {
+pages: "6–10 pages",
+format: "Microsoft Word or LaTeX",
+font: "Times New Roman",
+fontSize: "12",
+spacing: "1.5",
+citation: "APA / IEEE"
+},
+
+registration: [
+
+{
+category: "Student Author",
+fee: "$150"
+},
+
+{
+category: "Academic Author",
+fee: "$200"
+},
+
+{
+category: "Industry Participant",
+fee: "$250"
+},
+
+{
+category: "Listener",
+fee: "$80"
+}
+
+],
+
 importantDates: [
 { activity: "Abstract Submission", date: "10 September 2026" },
 { activity: "Full Paper Submission", date: "25 September 2026" },
@@ -395,6 +607,10 @@ month: "December 2026",
 
 title:
 "Global Conference on Data Science, Computational Intelligence, and Applied Informatics",
+
+aboutSiare: `The Society of Academic Integrated Research and Education (SIARE) is an international academic organization dedicated to advancing interdisciplinary research, academic collaboration, and global knowledge exchange. The society provides a platform where scholars, researchers, policymakers, and industry leaders collaborate to address complex global challenges through innovative research and technological advancement.
+
+SIARE promotes research that integrates multiple disciplines such as engineering, sciences, social sciences, humanities, medicine, and sustainability studies. Through international conferences, workshops, training programs, and scholarly publications, the society fosters intellectual collaboration and supports the dissemination of impactful research.`,
 
 aboutConference:
 "This conference brings together experts in data science, machine learning, and computational intelligence to discuss advances in big data analytics, artificial intelligence, and intelligent computing systems.",
@@ -429,6 +645,39 @@ topics: [
 
 ],
 
+submissionGuidelines: {
+pages: "6–10 pages",
+format: "Microsoft Word or LaTeX",
+font: "Times New Roman",
+fontSize: "12",
+spacing: "1.5",
+citation: "APA / IEEE"
+},
+
+registration: [
+
+{
+category: "Student Author",
+fee: "$150"
+},
+
+{
+category: "Academic Author",
+fee: "$200"
+},
+
+{
+category: "Industry Participant",
+fee: "$250"
+},
+
+{
+category: "Listener",
+fee: "$80"
+}
+
+],
+
 importantDates: [
 { activity: "Abstract Submission", date: "10 October 2026" },
 { activity: "Full Paper Submission", date: "25 October 2026" },
@@ -444,6 +693,10 @@ month: "January 2027",
 
 title:
 "International Conference on Education Innovation, Learning Technologies, and Academic Transformation",
+
+aboutSiare: `The Society of Academic Integrated Research and Education (SIARE) is an international academic organization dedicated to advancing interdisciplinary research, academic collaboration, and global knowledge exchange. The society provides a platform where scholars, researchers, policymakers, and industry leaders collaborate to address complex global challenges through innovative research and technological advancement.
+
+SIARE promotes research that integrates multiple disciplines such as engineering, sciences, social sciences, humanities, medicine, and sustainability studies. Through international conferences, workshops, training programs, and scholarly publications, the society fosters intellectual collaboration and supports the dissemination of impactful research.`,
 
 aboutConference:
 "This conference focuses on innovation in higher education, digital learning systems, and emerging educational technologies.",
@@ -478,6 +731,39 @@ topics: [
 
 ],
 
+submissionGuidelines: {
+pages: "6–10 pages",
+format: "Microsoft Word or LaTeX",
+font: "Times New Roman",
+fontSize: "12",
+spacing: "1.5",
+citation: "APA / IEEE"
+},
+
+registration: [
+
+{
+category: "Student Author",
+fee: "$150"
+},
+
+{
+category: "Academic Author",
+fee: "$200"
+},
+
+{
+category: "Industry Participant",
+fee: "$250"
+},
+
+{
+category: "Listener",
+fee: "$80"
+}
+
+],
+
 importantDates: [
 { activity: "Abstract Submission", date: "15 November 2026" },
 { activity: "Full Paper Submission", date: "1 December 2026" },
@@ -493,6 +779,10 @@ month: "February 2027",
 
 title:
 "World Conference on Business, Entrepreneurship, and Sustainable Economic Development",
+
+aboutSiare: `The Society of Academic Integrated Research and Education (SIARE) is an international academic organization dedicated to advancing interdisciplinary research, academic collaboration, and global knowledge exchange. The society provides a platform where scholars, researchers, policymakers, and industry leaders collaborate to address complex global challenges through innovative research and technological advancement.
+
+SIARE promotes research that integrates multiple disciplines such as engineering, sciences, social sciences, humanities, medicine, and sustainability studies. Through international conferences, workshops, training programs, and scholarly publications, the society fosters intellectual collaboration and supports the dissemination of impactful research.`,
 
 aboutConference:
 "This conference examines global business innovation, entrepreneurship ecosystems, and sustainable economic development.",
@@ -527,6 +817,39 @@ topics: [
 
 ],
 
+submissionGuidelines: {
+pages: "6–10 pages",
+format: "Microsoft Word or LaTeX",
+font: "Times New Roman",
+fontSize: "12",
+spacing: "1.5",
+citation: "APA / IEEE"
+},
+
+registration: [
+
+{
+category: "Student Author",
+fee: "$150"
+},
+
+{
+category: "Academic Author",
+fee: "$200"
+},
+
+{
+category: "Industry Participant",
+fee: "$250"
+},
+
+{
+category: "Listener",
+fee: "$80"
+}
+
+],
+
 importantDates: [
 { activity: "Abstract Submission", date: "10 December 2026" },
 { activity: "Full Paper Submission", date: "25 December 2026" },
@@ -542,6 +865,10 @@ month: "March 2027",
 
 title:
 "International Conference on Climate Change, Biodiversity, and Global Sustainability Research",
+
+aboutSiare: `The Society of Academic Integrated Research and Education (SIARE) is an international academic organization dedicated to advancing interdisciplinary research, academic collaboration, and global knowledge exchange. The society provides a platform where scholars, researchers, policymakers, and industry leaders collaborate to address complex global challenges through innovative research and technological advancement.
+
+SIARE promotes research that integrates multiple disciplines such as engineering, sciences, social sciences, humanities, medicine, and sustainability studies. Through international conferences, workshops, training programs, and scholarly publications, the society fosters intellectual collaboration and supports the dissemination of impactful research.`,
 
 aboutConference:
 "This conference focuses on climate change mitigation, biodiversity conservation, and sustainable environmental development.",
@@ -572,6 +899,39 @@ topics: [
 "Environmental Policy",
 "Green Technologies"
 ]
+}
+
+],
+
+submissionGuidelines: {
+pages: "6–10 pages",
+format: "Microsoft Word or LaTeX",
+font: "Times New Roman",
+fontSize: "12",
+spacing: "1.5",
+citation: "APA / IEEE"
+},
+
+registration: [
+
+{
+category: "Student Author",
+fee: "$150"
+},
+
+{
+category: "Academic Author",
+fee: "$200"
+},
+
+{
+category: "Industry Participant",
+fee: "$250"
+},
+
+{
+category: "Listener",
+fee: "$80"
 }
 
 ],

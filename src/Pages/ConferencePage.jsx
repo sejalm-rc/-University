@@ -4,6 +4,7 @@ import { Monitor } from "lucide-react";
 import bg from "../assets/bg.jpg";
 import conferenceImg from "../assets/conference2.png";
 import siare from "../assets/siare.png"
+import { Link } from "react-router-dom";
 export default function ConferencePage() {
 
 const { slug } = useParams();
@@ -34,7 +35,7 @@ return (
   <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/80"></div>
 
   {/* Content */}
-  <div className="relative max-w-5xl mx-auto px-6 text-center">
+  {/* <div className="relative max-w-5xl mx-auto px-6 text-center">
 
     <p className="text-yellow-400 font-bold mb-6 text-2xl mt-8">
       SIARE Conference Series(June-March)
@@ -48,7 +49,31 @@ return (
       {conference.month}
     </p>
 
+  </div> */}
+  <div className="relative max-w-5xl mx-auto px-6 text-center">
+
+  <div className="mb-6 text-left">
+    <Link
+      to="/"
+      className="inline-flex items-center gap-2 text-white bg-orange-500 px-4 py-2 rounded-md hover:bg-orange-600 transition"
+    >
+      ← Back to Home
+    </Link>
   </div>
+
+  <p className="text-yellow-400 font-bold mb-6 text-2xl mt-8">
+    SIARE Conference Series (June–March)
+  </p>
+
+  <h1 className="text-2xl md:text-[29px] font-bold leading-snug mb-8">
+    {conference.title}
+  </h1>
+
+  <p className="text-yellow-400 font-bold text-[20px]">
+    {conference.month}
+  </p>
+
+</div>
 
 </section>
 
