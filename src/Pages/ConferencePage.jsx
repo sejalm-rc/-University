@@ -1,7 +1,9 @@
 import { useParams } from "react-router-dom";
 import { conferences } from "../data/conferences";
 import { Monitor } from "lucide-react";
-
+import bg from "../assets/bg.jpg";
+import conferenceImg from "../assets/conference2.png";
+import siare from "../assets/siare.png"
 export default function ConferencePage() {
 
 const { slug } = useParams();
@@ -23,95 +25,124 @@ return (
 <div className="bg-white">
 
 {/* HERO */}
-<section className="py-24 bg-orange-50">
+<section
+  className="relative py-32 text-white bg-cover bg-center"
+  style={{ backgroundImage: `url(${bg})` }}
+>
 
-<div className="max-w-5xl mx-auto px-6 text-center">
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/80"></div>
 
-<p className="text-orange-500 font-semibold mb-3">
-SIARE Conference Series
-</p>
+  {/* Content */}
+  <div className="relative max-w-5xl mx-auto px-6 text-center">
 
-<h1 className="text-3xl md:text-4xl font-semibold text-gray-800 leading-snug">
-{conference.title}
-</h1>
+    <p className="text-yellow-400 font-bold mb-6 text-2xl mt-8">
+      SIARE Conference Series(June-March)
+    </p>
 
-<p className="text-gray-500 mt-4">
-{conference.month}
-</p>
+    <h1 className="text-2xl md:text-[29px] font-bold leading-snug mb-8">
+      {conference.title}
+    </h1>
 
-</div>
+    <p className="text-yellow-400 font-bold text-[20px]">
+      {conference.month}
+    </p>
+
+  </div>
 
 </section>
 
 {/* ABOUT SIARE */}
 
 {conference.aboutSiare && (
+<section className="bg-white py-12 md:py-20">
+  <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 
-<section className="py-20">
+    {/* Image */}
+    <div className="flex justify-center hover:scale-105 transition duration-300">
+      <img
+        src={siare}
+        alt="SIARE Conference"
+        className="w-full max-w-md rounded-lg object-cover"
+      />
+    </div>
 
-<div className="max-w-5xl mx-auto px-6">
+    {/* Text */}
+    <div className="text-justify md:pr-10">
+      <h2 className="text-center md:text-left text-2xl md:text-3xl font-bold text-orange-500 mb-6">
+        About SIARE
+      </h2>
 
-<h2 className="text-3xl font-semibold text-orange-500 mb-6">
-About SIARE
-</h2>
+      <p className="text-gray-700 text-sm md:text-base leading-relaxed whitespace-pre-line">
+        {conference.aboutSiare}
+      </p>
+    </div>
 
-<p className="text-gray-600 leading-relaxed whitespace-pre-line">
-{conference.aboutSiare}
-</p>
-
-</div>
-
+  </div>
 </section>
-
 )}
 
 {/* ABOUT CONFERENCE */}
 
-<section className="py-20 bg-gray-50">
+<section className="bg-white py-12 md:py-20">
+  <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2  items-center">
 
-<div className="max-w-5xl mx-auto px-6">
+    {/* Image */}
+    <div className="flex justify-center hover:scale-105 transition duration-300 md:order-2 ">
+      <img
+        src={conferenceImg}
+        alt="Conference"
+        className="w-full max-w-md rounded-lg object-cover"
+      />
+    </div>
 
-<h2 className="text-3xl font-semibold text-orange-500 mb-6">
-About the Conference
-</h2>
+    {/* Text */}
+    <div className="text-justify md:pr-10 md:order-1 ml-16">
+      <h2 className="text-center md:text-left text-2xl md:text-3xl font-bold text-orange-500 mb-6">
+        About the Conference
+      </h2>
 
-<p className="text-gray-600 leading-relaxed whitespace-pre-line">
-{conference.aboutConference}
-</p>
+      <p className="text-gray-700 text-sm md:text-base leading-relaxed whitespace-pre-line ">
+        {conference.aboutConference}
+      </p>
+    </div>
 
-</div>
-
+  </div>
 </section>
 
 {/* OBJECTIVES */}
 
 {conference.objectives && (
 
-<section className="py-20">
+<section className="bg-white py-20">
 
-<div className="max-w-5xl mx-auto px-6">
+  <div className="max-w-6xl mx-auto px-6">
 
-<h2 className="text-3xl font-semibold text-orange-500 mb-10 text-center">
-Conference Objectives
-</h2>
+    {/* Title */}
+    <h2 className="text-4xl font-semibold text-orange-500 mb-10 text-center">
+      Conference Objectives
+    </h2>
 
-<ul className="space-y-4">
+    {/* Card */}
+    <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
 
-{conference.objectives.map((obj, index) => (
+      <ul className="space-y-5">
 
-<li key={index} className="flex text-gray-600">
+        {conference.objectives.map((obj, index) => (
+          <li key={index} className="flex items-start text-gray-700">
 
-<span className="text-orange-500 mr-3">→</span>
+            <span className="text-orange-500 mr-3 text-lg">→</span>
 
-{obj}
+            <span className="leading-relaxed">{obj}</span>
 
-</li>
+          </li>
+        ))}
 
-))}
+      </ul>
 
-</ul>
+    </div>
 
-</div>
+  </div>
 
 </section>
 
@@ -121,7 +152,7 @@ Conference Objectives
 
 {conference.tracks && (
 
-<section className="py-20 bg-gray-50">
+<section className="py-20 bg-white">
 
 <div className="max-w-6xl mx-auto px-6">
 
@@ -187,160 +218,151 @@ className="flex text-gray-600"
 
 {/* SUBMISSION GUIDELINES */}
 
+
 {conference.submissionGuidelines && (
 
-<section className="py-20">
+<section className="bg-white py-20">
 
-<div className="max-w-4xl mx-auto px-6">
+  <div className="max-w-6xl mx-auto px-6">
 
-<h2 className="text-3xl font-semibold text-orange-500 mb-8 text-center">
-Paper Submission Guidelines
-</h2>
+    {/* Title */}
+    <h2 className="text-4xl font-semibold text-orange-500 mb-10 text-center">
+      Paper Submission Guidelines
+    </h2>
 
-<div className="bg-gray-50 p-8 rounded-xl">
+    {/* Card */}
+    <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
 
-<ul className="space-y-4 text-gray-600">
+      <ul className="space-y-5 text-gray-700">
 
-<li>
-<b>Pages:</b> {conference.submissionGuidelines.pages}
-</li>
+        <li>
+          <span className="font-semibold">Pages:</span>{" "}
+          {conference.submissionGuidelines.pages}
+        </li>
 
-<li>
-<b>Format:</b> {conference.submissionGuidelines.format}
-</li>
+        <li>
+          <span className="font-semibold">Format:</span>{" "}
+          {conference.submissionGuidelines.format}
+        </li>
 
-<li>
-<b>Font:</b> {conference.submissionGuidelines.font}
-</li>
+        <li>
+          <span className="font-semibold">Font:</span>{" "}
+          {conference.submissionGuidelines.font}
+        </li>
 
-<li>
-<b>Font Size:</b> {conference.submissionGuidelines.fontSize}
-</li>
+        <li>
+          <span className="font-semibold">Font Size:</span>{" "}
+          {conference.submissionGuidelines.fontSize}
+        </li>
 
-<li>
-<b>Line Spacing:</b> {conference.submissionGuidelines.spacing}
-</li>
+        <li>
+          <span className="font-semibold">Line Spacing:</span>{" "}
+          {conference.submissionGuidelines.spacing}
+        </li>
 
-<li>
-<b>Citation Style:</b> {conference.submissionGuidelines.citation}
-</li>
+        <li>
+          <span className="font-semibold">Citation Style:</span>{" "}
+          {conference.submissionGuidelines.citation}
+        </li>
 
-</ul>
+      </ul>
 
-</div>
+    </div>
 
-</div>
+  </div>
 
 </section>
 
 )}
 
-{/* REGISTRATION */}
+{/* REGISTRATION FEES */}
 
 {conference.registration && (
+<section className="bg-gray-100 py-20">
+  <div className="max-w-6xl mx-auto px-6">
 
-<section className="py-20 bg-gray-50">
+    {/* Title */}
+    <h2 className="text-4xl font-semibold text-orange-500 mb-10 text-center">
+      Registration Fees
+    </h2>
 
-<div className="max-w-4xl mx-auto px-6">
+    {/* Table Card */}
+    <div className="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-200">
 
-<h2 className="text-3xl font-semibold text-orange-500 text-center mb-10">
-Registration Fees
-</h2>
+      <table className="w-full text-left">
 
-<div className="overflow-x-auto">
+        {/* Header */}
+        <thead className="bg-gray-50 text-gray-700">
+          <tr>
+            <th className="px-8 py-4 font-semibold">Category</th>
+            <th className="px-8 py-4 font-semibold">Fee</th>
+          </tr>
+        </thead>
 
-<table className="w-full border border-orange-200">
+        {/* Body */}
+        <tbody className="text-gray-700">
+          {conference.registration.map((reg, index) => (
+            <tr
+              key={index}
+              className="border-t border-gray-200 hover:bg-gray-50 transition"
+            >
+              <td className="px-8 py-5">{reg.category}</td>
+              <td className="px-8 py-5">{reg.fee}</td>
+            </tr>
+          ))}
+        </tbody>
 
-<thead className="bg-orange-100">
+      </table>
 
-<tr>
+    </div>
 
-<th className="p-4 text-left">Category</th>
-
-<th className="p-4 text-left">Fee</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-{conference.registration.map((reg, index) => (
-
-<tr key={index} className="border-t">
-
-<td className="p-4">{reg.category}</td>
-
-<td className="p-4">{reg.fee}</td>
-
-</tr>
-
-))}
-
-</tbody>
-
-</table>
-
-</div>
-
-</div>
-
+  </div>
 </section>
-
 )}
 
 {/* IMPORTANT DATES */}
 
 {conference.importantDates && (
+<section className="bg-gray-100 py-20">
+  <div className="max-w-6xl mx-auto px-6">
 
-<section className="py-20">
+    {/* Title */}
+    <h2 className="text-4xl font-semibold text-orange-500 mb-10 text-center">
+      Important Dates
+    </h2>
 
-<div className="max-w-4xl mx-auto px-6">
+    {/* Table Card */}
+    <div className="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-200">
 
-<h2 className="text-3xl font-semibold text-orange-500 text-center mb-10">
-Important Dates
-</h2>
+      <table className="w-full text-left">
 
-<div className="overflow-x-auto">
+        {/* Header */}
+        <thead className="bg-gray-50 text-gray-700">
+          <tr>
+            <th className="px-8 py-4 font-semibold">Activity</th>
+            <th className="px-8 py-4 font-semibold">Date</th>
+          </tr>
+        </thead>
 
-<table className="w-full border border-orange-200">
+        {/* Body */}
+        <tbody className="text-gray-700">
+          {conference.importantDates.map((date, index) => (
+            <tr
+              key={index}
+              className="border-t border-gray-200 hover:bg-gray-50 transition"
+            >
+              <td className="px-8 py-5">{date.activity}</td>
+              <td className="px-8 py-5">{date.date}</td>
+            </tr>
+          ))}
+        </tbody>
 
-<thead className="bg-orange-100">
+      </table>
 
-<tr>
+    </div>
 
-<th className="p-4 text-left">Activity</th>
-
-<th className="p-4 text-left">Date</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-{conference.importantDates.map((date, index) => (
-
-<tr key={index} className="border-t">
-
-<td className="p-4">{date.activity}</td>
-
-<td className="p-4">{date.date}</td>
-
-</tr>
-
-))}
-
-</tbody>
-
-</table>
-
-</div>
-
-</div>
-
+  </div>
 </section>
-
 )}
 
 </div>

@@ -1,5 +1,4 @@
 export const conferences = [
-
 {
 slug: "icirsies-2026",
 
