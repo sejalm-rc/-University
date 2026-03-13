@@ -1,151 +1,128 @@
-import { Link } from "react-router-dom";
-import { CalendarDays } from "lucide-react";
+import { Monitor } from "lucide-react";
 
-const conferences = [
-{
-slug: "icirsies-2026",
-month: "June 2026",
-title:
-"International Conference on Interdisciplinary Research and Sustainable Innovation in Science, Engineering, and Society"
-},
-
-{
-slug: "biotech-2026",
-month: "July 2026",
-title:
-"Global Conference on Advances in Biotechnology, Pharmacology, and Translational Health Sciences"
-},
-
-{
-slug: "ai-smart-engineering-2026",
-month: "August 2026",
-title:
-"International Conference on Emerging Technologies, Artificial Intelligence, and Smart Engineering Systems"
-},
-
-{
-slug: "social-policy-2026",
-month: "September 2026",
-title:
-"World Conference on Social Transformation, Public Policy, and Global Development Studies"
-},
-
-{
-slug: "agriculture-2026",
-month: "October 2026",
-title:
-"International Conference on Agriculture, Food Security, and Sustainable Environmental Systems"
-},
-
-{
-slug: "digital-humanities-2026",
-month: "November 2026",
-title:
-"International Conference on Digital Humanities, Media Culture, and Creative Arts Research"
-},
-
-{
-slug: "data-science-2026",
-month: "December 2026",
-title:
-"Global Conference on Data Science, Computational Intelligence, and Applied Informatics"
-},
-
-{
-slug: "education-2027",
-month: "January 2027",
-title:
-"International Conference on Education Innovation, Learning Technologies, and Academic Transformation"
-},
-
-{
-slug: "business-2027",
-month: "February 2027",
-title:
-"World Conference on Business, Entrepreneurship, and Sustainable Economic Development"
-},
-
-{
-slug: "climate-2027",
-month: "March 2027",
-title:
-"International Conference on Climate Change, Biodiversity, and Global Sustainability Research"
-}
+const tracks = [
+  {
+    title: "Track 1",
+    subtitle: "Intelligent Computing, AI and Contemporary Computer Science",
+    topics: [
+      "Computing Technologies & Data Science",
+      "Advanced materials",
+      "Computing Algorithms and its Application",
+      "Parallel and Distributed Computing",
+      "Neural Networks and Deep Learning",
+      "Meta-heuristic Algorithms",
+      "Computing Architectures and Systems",
+      "AI & ML",
+      "Networks, IoT and Cyber Security",
+      "Cluster, Cloud, & Grid Computing",
+      "Big Data Analytics",
+    ],
+  },
+  {
+    title: "Track 2",
+    subtitle:
+      "Cutting-edge Electronics and Next-Gen Communication Technologies",
+    topics: [
+      "Electronics & Communication Technology",
+      "Electronic devices, materials and fabrication process",
+      "Device modelling & characterization",
+      "Wired & wireless communications and Networks",
+      "Antennas, Propagation and Computational EM",
+      "Image / Video / Multimedia Signal Processing",
+      "Signal Processing Algorithms and Architectures",
+      "Remote Sensing & Satellite Communications",
+    ],
+  },
+  {
+    title: "Track 3",
+    subtitle:
+      "Power Electronics, Smart Grids and Electric Vehicle Technologies",
+    topics: [
+      "Electrical Power, Energy and Power Electronics",
+      "Power Generation, Transmission and Distribution",
+      "Renewable Energy Sources and Technology",
+      "High Voltage Engineering, HVDC-FACTS",
+      "Switching Circuits & Power Converters",
+      "Power System Monitoring, Control and Protection",
+      "Smart Grid, Micro Grids & Distributed Generation",
+      "Energy Storage System",
+      "Electric Vehicles (EVs)",
+      "Vehicle to Grid (V2G)",
+    ],
+  },
+  {
+    title: "Track 4",
+    subtitle:
+      "Robotics, Automation, Renewable Energy and Sustainability Technologies",
+    topics: [
+      "Robotics, Control, Instrumentation and Automation",
+      "Application of IoT technologies in robotics & automation",
+      "Humanoid robots",
+      "Mobile robotics",
+      "Control system modelling",
+      "Intelligent control, Neuro-control, Fuzzy control and their applications",
+      "Networked control systems",
+      "Instrumentation systems",
+      "Industrial automation",
+    ],
+  },
 ];
 
-export default function ConferenceList() {
+export default function CallForPapers() {
+  return (
+    <section className="py-20 bg-white">
+      <div className="max-w-5xl mx-auto px-6">
+        {/* Heading */}
+        <div className="text-center mb-14">
+          <h2 className="text-3xl font-semibold text-orange-500">
+            Call For Papers
+          </h2>
+          <p className="mt-4 text-gray-600 max-w-3xl mx-auto">
+            High-quality original research and review papers are invited from
+            academicians, industry professionals, and R&D organizations in the
+            following (but not limited to) areas:
+          </p>
+        </div>
 
-return (
+        {/* Grid */}
+        <div className="grid md:grid-cols-2 gap-10">
+          {tracks.map((track, index) => (
+            <div
+              key={index}
+              className="border border-orange-200 rounded-xl p-8 bg-white hover:shadow-lg transition"
+            >
+              {/* Icon + Title */}
+              <div className="flex items-start gap-4 mb-5">
+                <div className="bg-orange-100 p-3 rounded-full">
+                  <Monitor className="text-orange-500" size={20} />
+                </div>
 
-<section className="py-20 bg-white">
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-800">
+                    {track.title}
+                  </h3>
+                  <p className="text-gray-500 text-[16px] mt-1">
+                    {track.subtitle}
+                  </p>
+                </div>
+              </div>
 
-<div className="max-w-5xl mx-auto px-6">
-
-{/* Heading */}
-
-<div className="text-center mb-14">
-
-<h2 className="text-3xl font-semibold text-orange-500">
-SIARE Conference Series
-</h2>
-
-<p className="mt-4 text-gray-600 max-w-3xl mx-auto">
-Explore upcoming international conferences organized under the
-SIARE Conference Series. Researchers, academicians, and industry
-experts are invited to participate and present their work.
-</p>
-
-</div>
-
-{/* Grid */}
-
-<div className="grid md:grid-cols-2 gap-10">
-
-{conferences.map((conf) => (
-
-<div
-key={conf.slug}
-className="border border-orange-200 rounded-xl p-8 bg-white hover:shadow-lg transition flex flex-col justify-between"
->
-
-{/* Icon + Month */}
-
-<div className="flex items-center gap-4 mb-5">
-
-<div className="bg-orange-100 p-3 rounded-full">
-<CalendarDays className="text-orange-500" size={20} />
-</div>
-
-<p className="text-gray-500 font-medium">
-{conf.month}
-</p>
-
-</div>
-
-{/* Title */}
-
-<h3 className="text-lg font-semibold text-gray-800 leading-relaxed">
-{conf.title}
-</h3>
-
-{/* Button */}
-
-<Link
-to={`/conference/${conf.slug}`}
-className="mt-6 inline-block text-orange-500 font-medium hover:underline"
->
-View Details →
-</Link>
-
-</div>
-
-))}
-
-</div>
-
-</div>
-
-</section>
-
-);
+              {/* Topics */}
+              <ul className="space-y-2">
+                {track.topics.map((topic, i) => (
+                  <li
+                    key={i}
+                    className="flex items-start text-gray-600 text-[16px]"
+                  >
+                    <span className="text-orange-500 mr-2">→</span>
+                    {topic}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 }
