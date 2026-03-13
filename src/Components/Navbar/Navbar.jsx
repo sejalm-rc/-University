@@ -7,6 +7,7 @@ export default function Navbar() {
 
   const menuItems = [
     { name: "HOME", link: "/#home" },
+    { name: "CONFERENCE LIST", link: "/#conferences" },
     { name: "CALL FOR PAPERS", link: "/#callForPapers" },
     { name: "SUBMISSIONS", link: "/#submission" },
     { name: "REGISTRATION", link: "/#registrationFee" },

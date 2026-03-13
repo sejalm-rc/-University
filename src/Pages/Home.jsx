@@ -10,6 +10,7 @@ import RegistrationDates from "../Components/RegistrationDates/RegistrationDates
 import Contact from "../Components/Contact/Contact";
 import Footer from "../Components/Footer/Footer";
 import Committee from "../Components/Committee/Committee";
+import ConferenceList from "../Components/ConferenceList/ConferenceList";
 
 export default function Home() {
   return (
@@ -18,6 +19,10 @@ export default function Home() {
 
       <section id="home">
         <Hero />
+      </section>
+
+      <section id="conferences">
+        <ConferenceList />
       </section>
 
       <section id="about">
